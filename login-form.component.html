@@ -1,0 +1,236 @@
+<body bgcolor="#f1f1f1">
+<h5 class="top-black-band" >
+		<p class="top-black-band-data" >Espanol&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; Contact Us &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 123-456-789</p>
+	</h5>
+    <h1 class="top-logo-data">LOGO Manage Policies<br>Join the million of policy owners who are managing their accounts online!</h1>
+      <table class="parent-table" align= "center" frame="box" width="100px" height="100px" border="0px" style="border:0px;" bordercolor="white" cellspacing="20" cellpadding="30px">
+		<tr width="100px" height="50px">
+			<td class="cmn-td">
+				<h2 class="text-center-signin" >Sign In</h2>
+				<div>
+				  <label class="label-cmn">Email</label>
+				  <div style="margin-top:10px;"></div>
+				   <input type="text" class="input-email" id="email" required name="email" placeholder=" Email">
+				</div>
+				<div style="margin-top:20px;"></div>
+				<div>
+				  <label class="label-cmn">Password</label>
+				  <div style="margin-top:10px;"></div>
+				  <input class="input-pwd" type="password" name="password" placeholder=" Password" required>
+				</div>
+				<div style="margin-top:30px;"></div>
+				<label class="forgot-pwd" >Forgot Password? &nbsp;	Remember Me	&nbsp; 
+					<div class="switch">
+						<input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+						<label for="cmn-toggle-1"></label>
+					</div>
+				</label>
+				<div style="margin-top:20px;"></div>
+				<label class="login-btn" style="margin-left: 64px;">
+					<input class="cmn-btn" type="button" value="LOGIN">
+				</label>
+				<div style="margin-top:20px;"></div>
+				<hr>
+				<h4 class="btm-text" >
+					Create an Account
+					<div style="margin-top:5px;"></div>
+					<u>Sign up to take advantage of your online benifits</u>
+				</h4>
+				<div style="margin-top:20px;"></div>
+			</td>
+			<td class="cmn-td">
+				<h2 class="text-center-quickpay" >Quick Pay</h2>
+				<h5 style="text-align:center;color:black;">Pay your bill without sigining in</h5>
+				<div>
+				<label class="label-cmn">Policy Number</label>
+				<div style="margin-top:10px;"></div>
+				<input class="input-email" type="text" name="email" placeholder=" Policy Number" required autofocus>
+				</div>
+				<div style="margin-top:20px;"></div>
+				<div>
+				 <label class="label-cmn">Date of Birth</label>
+				 <div style="margin-top:10px;"></div>
+				<input class="input-email" type="date" name="password" placeholder=" DD/MM/YYYY" required>
+				</div>
+				<div style="margin-top:20px;"></div>
+				<div>
+				 <label class="label-cmn">Zip Code</label>
+				 <div style="margin-top:10px;"></div>
+				<input class="input-email" type="number" name="password" placeholder=" Zip Code" required>
+				</div>
+				<div style="margin-top:20px;"></div>
+				<label style="margin-left:64px;">
+				<input class="cmn-btn" type="button" value="MAKE A PAYMENT" >
+				</label>
+			</td>
+		</tr>
+	  </table>
+	<footer class="copy-right">
+	<h5>&copy; 2016 <span style="cursor:pointer;">Terms and Conditions | Privacy Policy </span></h5>
+	</footer>
+
+</body>
+
+
+
+<style>
+  .no-style .ng-valid {
+  border-left: 1px  solid #CCC
+}
+
+  .no-style .ng-invalid {
+  border-left: 1px  solid #CCC
+}
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 40px;
+  height: 17px;
+  background-color: #dddddd;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 20px;
+  background-color: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: margin 0.4s;
+  -moz-transition: margin 0.4s;
+  -o-transition: margin 0.4s;
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 21px;
+}
+.top-black-band {
+	text-align:right;
+	color:white;
+	background-color:black;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.top-black-band-data{
+	margin-right:70px;
+	margin-top:0px;
+	padding: 5px 0px;
+}
+.top-logo-data {
+	text-align:center;
+	margin-top:40px;
+	font-size:20px;
+	color:#161617;
+}
+.parent-table {
+	margin-top:0px;
+	vertical-align:middle;
+}
+.text-center-signin {
+	text-align:center;
+	margin-top: -21px;
+	color:black;
+}
+.input-email{
+	font-family:monospace;
+	width:290px;
+	color: black;
+}
+.input-pwd{
+	font-family:monospace;
+	width:290px;
+}
+.forgot-pwd{
+	cursor:pointer;
+	margin-top:-10px;
+	color:black;
+}
+.switch{
+	margin-right:-114px;margin-left:256px;margin-top:-19px;
+}
+.login-btn{
+	text-align:center;margin-top:-12px;
+}
+.cmn-btn{
+	background-color:#060606;
+	width:186px;
+	height:29px;
+	border:none;
+	text-align:center;
+	cursor:pointer;
+	color:white;
+	font-weight:bold;
+	font-size:larger;
+	border-radius:10px;
+}
+.btm-text{
+	text-align:center;
+	font-size:13px;
+	color:black;
+}
+.text-center-quickpay{
+	text-align:center;
+	margin-top:-23%;
+	color:black;
+}
+.copy-right{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	text-align:left;
+	color:black;
+}
+.cmn-td{
+	background-color:white;
+}
+.label-cmn{
+	color: black;
+}
+</style>
