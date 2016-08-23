@@ -19,12 +19,37 @@
 				  <input class="input-pwd" type="password" name="password" placeholder=" Password" required>
 				</div>
 				<div style="margin-top:30px;"></div>
-				<label class="forgot-pwd" >Forgot Password? &nbsp;	Remember Me	&nbsp; 
+				<label class="forgot-pwd" ><span id="myBtn" onClick="openPopUp();">Forgot Password? </span> &nbsp;	Remember Me	&nbsp;</label>
+					<label>
 					<div class="switch">
 						<input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
 						<label for="cmn-toggle-1"></label>
 					</div>
-				</label>
+					</label>
+				<div id="myModal" class="modal">
+
+				  <!-- Modal content starts here-->
+				  <div class="modal-content">
+					<span class="close">&#10006;</span>
+					<p style="color:black;font-family:monospace;font-size:170%;">Forgot your password</p>
+					<hr>
+					<div style="margin-top:10px;"></div>
+					<label style="color:black;font-family:monospace;font-size:140%;">To reset your password:</label>
+					<div style="margin-top:15px;"></div>
+					<label style="color:black;font-family:monospace;font-size:130%;"><b>.</b> Enter email below and click Reset Password </label> <div style="margin-top:5px;"></div>
+					<label style="color:black;font-family:monospace;font-size:130%;"><b>.</b> Follow the link to reset password from your email </label>
+					<div style="margin-top:15px;"></div>	
+					<label style="color:black;font-family:monospace;font-size:125%;">If you need further assistance, please </label> <u style="color:black;"> contact customer service.</u>
+					<div style="margin-top:30px;"></div>
+					<label style="color:black;font-family:monospace;font-size:150%;">Email *</label>
+					<div style="margin-top:10px;"></div>
+						<input type="text" name="forgotPwdText" placeholder = "     example@gmail.com" style="width:100%;height: 24px;">
+					<div style="margin-top:25px;"></div>
+					<u style="color:black;cursor:pointer;font-family:monospace;font-size:130%;">Cancel</u>  <input class="cmn-btn" style="margin-left:289px;background-color:#060606;width:190px;height:35px;border:none;text-align:center;cursor:pointer;color:white;font-weight:bold;font-size:larger;border-radius:0px;" type="button" value="RESET PASSWORD">
+				  </div>
+				 <!-- Modal content ends here -->
+				</div>
+
 				<div style="margin-top:20px;"></div>
 				<label class="login-btn" style="margin-left: 64px;">
 					<input class="cmn-btn" type="button" value="LOGIN">
@@ -68,7 +93,8 @@
 	<footer class="copy-right">
 	<h5>&copy; 2016 <span style="cursor:pointer;">Terms and Conditions | Privacy Policy </span></h5>
 	</footer>
-
+	<!-- Forgot Password Modal PopUp -->
+	
 </body>
 
 
@@ -232,5 +258,44 @@ input.cmn-toggle-round:checked + label:after {
 }
 .label-cmn{
 	color: black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: lightgrey;
+    margin: auto;
+    padding: 22px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 </style>
