@@ -1,3 +1,67 @@
+body { margin:0px;padding:0px;background:#f1f1f1;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;}
+	p,li {
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+.recipient-name {
+    box-shadow: none;
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+.row { margin:0px auto; }
+.top-black-band-data {background:#000;color:#fff;text-align:right;padding:4px;margin-top:4px; }
+.top-logo-data {  text-align: center;}
+.col-md-sign ,.col-md-quick-Pay{ background:#fff;float:left;}
+
+.col-md-quick-Pay {padding:0px 10px 10px 10px;margin-left:20px;    min-height: 460px;}
+
+.m-l-5 { margin-left:4.5%; !important; }
+
+h1.top-logo-data {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #161617;
+    font-weight: normal;
+}
+
+h2 { text-align:center;}
+h5 { text-align:center;}
+
+input#email ,.input-pwd,.input-email {
+    border-radius: 0px;
+    padding: 20px 20px;
+  
+}
+.input-email { padding:8px 5px;
+height:42px}
+
+.label-cmn { width:94%;clear:both;float:left;margin-left:6%; }
+
+.switch { float:right;}
+label.forgot-pwd {
+
+       /* margin: 0px auto; */
+    margin-top: 3px;
+    /* margin-bottom: 30px; */
+    padding: 0px;
+    font-size: 12px;
+    margin-left: 4%;
+	font-weight: normal;
+}
+.forgot-pwd {
+    cursor: pointer;
+    margin-top: -10px;
+    color: black;
+	float:left;
+}
 .cmn-toggle {
   position: absolute;
   margin-left: -9999px;
@@ -16,7 +80,11 @@
 input.cmn-toggle-round + label {
   padding: 2px;
   width: 40px;
-  height: 17px;
+ 
+  right: 25%;
+    height: 17px;
+    background-color: #dddddd;
+    position: absolute;
   background-color: #dddddd;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
@@ -67,74 +135,148 @@ input.cmn-toggle-round:checked + label:before {
 input.cmn-toggle-round:checked + label:after {
   margin-left: 21px;
 }
-.top-black-band {
-	text-align:right;
-	color:white;
-	background-color:black;
-	width:100%;
-	margin:0px;
-	padding:0px;
+
+
+.cmn-btn ,.btn-default1:hover{
+    background-color: #060606;
+    width: 90%;
+    height: 35px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    /* box-shadow: 0 0 10px 3px #15d6ba; */
+    border-radius: 5px;
+    margin: 12px auto;
+    display: block;
 }
-.top-black-band-data{
-	margin-right:70px;
+.login-btn {  margin-top:30px;}
+hr { width:90%;margin:20px auto;}
+.btm-text {  text-align: center;
+    font-size: 13px;
+    color: black;
+
+}
+.Sign-up {  margin-top:5px;}
+.copy-right h5 { text-align:left;color:black;margin-left:40px;
+
+    font-family: 'ArialMT', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+   
+    line-height: normal;
+
+}
+.copy-right {
+    position: relative;
+	clear:both;
+    bottom: 0px;
+    width: 100%;
+    text-align: left;
+    color: black;
+}
+
+.col-md-quick-Pay h2 { margin-top:10px; }
+input.dob{ text-transform: uppercase; } 
+.sign-in { margin-bottom:30px;}
+
+.modal { top:14% !important;height:403px;} 
+.text-left-close {  float:left;border:none;text-decoration:underline;font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;}
+	button.btn.btn-default.text-left-close {
+    background: none;
+    text-decoration: underline;
+}
+button.btn.btn-primary.reset-password {
+    background: #000;
+    border: none;
+    border-radius: 0px !important;
+    padding: 9px 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.modal-content ,input#recipient-name{
+    border-radius: 0px !important;    border-color: rgba(134, 134, 134, 1);
+}
+.customer-service {text-decoration:underline;cursor:pointer; }
+h4#exampleModalLabel {
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #5E5E5E;
+}
+input#recipient-name {
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #CCCCCC;
+    text-align: left;
+}
+.modal-content {
+    width: 80% !important;
+    margin: 0px auto;
+}
+
+button.close {
+    font-family: 'Lato-Regular', 'Lato';   
+    font-size: 29px;
+   
+}
+div#forgot-password {
+    overflow-y: hidden;
+}
+@media (min-width:769px) and (max-width:960px)
+{
+	.col-md-offset-3.col-md-3.col-md-sign.col-xs-12 {
+    width: 40%;
+    float: left;
+    display: block;
+    margin-left: 8%;
+    min-height: 470px;
+}
+.switch { float: right !important;margin-right:12px;display:block;}
+.col-md-quick-Pay {
+    padding: 0px 10px 10px 10px;
+    margin-left: 4%;
+    width: 40% !important;
+}
+
+}
+@media  (max-width:768px)
+{
+	.col-md-sign,.col-md-quick-Pay { width:98%;clear:both;margin:10px auto;}
+	.switch {
+    float: right;
+    /* margin-right: 43px; */
+    right: 0px;
+    position: absolute;
+}
+.col-md-quick-Pay {
+    margin-left:0px;
+}
+label.forgot-pwd {
+    /* margin: 0px auto; */
+    /* margin-top: 3px; */
+    /* margin-bottom: 30px; */
+    padding: 0px;
 	margin-top:0px;
-	padding: 5px 0px;
+    font-size: 12px;
+    margin-left: 7%;
+    font-weight: normal;
 }
-.top-logo-data {
-	text-align:center;
-	margin-top:40px;
-	font-size:20px;
 }
-.parent-table {
-	margin-top:0px;
-	vertical-align:middle;
-}
-.text-center-signin {
-	text-align:center;
-	margin-top: -21px;
-}
-.input-email{
-	font-family:monospace;
-	width:290px;
-}
-.input-pwd{
-	font-family:monospace;
-	width:290px;
-}
-.forgot-pwd{
-	cursor:pointer;
-	margin-top:-10px;
-}
-.switch{
-	margin-right:-114px;margin-left:245px;margin-top:-35px;
-}
-.login-btn{
-	text-align:center;margin-top:-12px;
-}
-.cmn-btn{
-	background-color:#060606;
-	width:186px;
-	height:29px;
-	border:none;
-	text-align:center;
-	cursor:pointer;
-	color:white;
-	font-weight:bold;
-	font-size:larger;
-	border-radius:10px;
-}
-.btm-text{
-	text-align:center;
-	font-size:13px;
-}
-.text-center-quickpay{
-	text-align:center;
-	margin-top:-19%;
-	margin-top:-19%;
-}
-.copy-right{
-	position:fixed;bottom:0px;width:100%;text-align:center;
-}
-.cmn-td{
-	background-color:white;
-}
+
+@media (max-width: 320px){ .switch {
+float: right; margin-right: 20px;} }
