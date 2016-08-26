@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link href="C:Users/W Beta/Desktop/plunk/plunk/app/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body bgcolor="#f1f1f1">
+	<h5 class="top-black-band" >
+		<p class="top-black-band-data" >Espanol&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; Contact Us &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 123-456-789</p>
+	</h5>
+	<h1 class="top-logo-data" > LOGO Manage Policies </br>
+	Join the million of policy owners who are managing their accounts online!
+	</h1>
+		<table class="parent-table" align= "center" frame="box" width="100px" height="100px" border="0px" bordercolor="white" cellspacing="20" cellpadding="30px">
+			<tr width="100px" height="50px">
+				<td class="cmn-td">
+					  <h2 class="text-center-signin" >Sign In</h2>
+					  <form method="post" ng-submit="login()" name="loginForm">
+							<div>
+							  Email</br>
+							  <input class="input-email" type="text" name="email" ng-model="email" placeholder=" Email" required autofocus>
+							</div>
+							</br>
+							<div>
+							  Password</br>
+							  <input class="input-pwd" type="password" name="password" ng-model="password" placeholder=" Password" style="" required>
+							</div>
+							</br></br>
+							<p class="forgot-pwd" >Forgot Password? &nbsp;	Remember Me	&nbsp; 
+							<div class="switch">
+								<input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+								<label for="cmn-toggle-1"></label>
+							</div>
+							</p>
+							</br>
+							<p class="login-btn" >
+								<input class="cmn-btn" type="button" value="LOGIN" ng-disabled="loginForm.$invalid" >
+							</p>
+							<br/>
+							<hr>
+							<h4 class="btm-text" >
+								Create an Account</br>
+								<u>Sign up to take advantage of your online benifits</u>
+							</h4>
+					  </form>
+				</td>
+				<td class="cmn-td">
+					  <h2 class="text-center-quickpay" >Quick Pay</h2>
+					  <h5 style="text-align:center;">Pay your bill without sigining in</h5>
+					  <form method="post" ng-submit="login()" name="loginForm">
+						<div>
+						Policy Number</br>
+						<input class="input-email" type="number" name="email" ng-model="policynumber" placeholder=" Policy Number" required autofocus>
+						</div>
+						</br>
+						<div>
+						 Date of Birth</br>
+						<input class="input-email" type="text" name="password" ng-model="dob" placeholder=" DD/MM/YYYY" required>
+						</div>
+						</br>
+						<div>
+						 Zip Code</br>
+						<input class="input-email" type="number" name="password" ng-model="zipcode" placeholder=" Zip Code" required>
+						</div>
+						</br></br>
+						<p style="text-align: center;margin-top: -12px;">
+						<input class="cmn-btn" type="button" value="MAKE A PAYMENT" ng-disabled="loginForm.$invalid" >
+						</p>
+						<br/>
+					</form>
+				</td>
+			</tr>
+		</table>
+	<footer class="copy-right">
+	<h5>&copy; 2016 Terms and Conditions | Privacy Policy</h5>
+	</footer>
+</body>
+</html>

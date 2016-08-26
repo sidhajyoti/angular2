@@ -1,0 +1,140 @@
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 40px;
+  height: 17px;
+  background-color: #dddddd;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 20px;
+  background-color: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: margin 0.4s;
+  -moz-transition: margin 0.4s;
+  -o-transition: margin 0.4s;
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 21px;
+}
+.top-black-band {
+	text-align:right;
+	color:white;
+	background-color:black;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.top-black-band-data{
+	margin-right:70px;
+	margin-top:0px;
+	padding: 5px 0px;
+}
+.top-logo-data {
+	text-align:center;
+	margin-top:40px;
+	font-size:20px;
+}
+.parent-table {
+	margin-top:0px;
+	vertical-align:middle;
+}
+.text-center-signin {
+	text-align:center;
+	margin-top: -21px;
+}
+.input-email{
+	font-family:monospace;
+	width:290px;
+}
+.input-pwd{
+	font-family:monospace;
+	width:290px;
+}
+.forgot-pwd{
+	cursor:pointer;
+	margin-top:-10px;
+}
+.switch{
+	margin-right:-114px;margin-left:245px;margin-top:-35px;
+}
+.login-btn{
+	text-align:center;margin-top:-12px;
+}
+.cmn-btn{
+	background-color:#060606;
+	width:186px;
+	height:29px;
+	border:none;
+	text-align:center;
+	cursor:pointer;
+	color:white;
+	font-weight:bold;
+	font-size:larger;
+	border-radius:10px;
+}
+.btm-text{
+	text-align:center;
+	font-size:13px;
+}
+.text-center-quickpay{
+	text-align:center;
+	margin-top:-19%;
+	margin-top:-19%;
+}
+.copy-right{
+	position:fixed;bottom:0px;width:100%;text-align:center;
+}
+.cmn-td{
+	background-color:white;
+}

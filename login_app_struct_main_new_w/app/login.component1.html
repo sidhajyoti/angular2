@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Login</title>
+<style>
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 40px;
+  height: 17px;
+  background-color: #dddddd;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 20px;
+  background-color: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: margin 0.4s;
+  -moz-transition: margin 0.4s;
+  -o-transition: margin 0.4s;
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 21px;
+}
+
+</style>
+</head>
+<body bgcolor="#f1f1f1">
+<h5 style="margin-top:-9px;text-align:right;color:white;background-color:black;width:100%;height:19px;">
+<p style="margin-right:70px;margin-top:11px;">Espanol&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; Contact Us &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 123-456-789</p>
+</h5>
+<h1 style="text-align:center;margin-top:40px;font-size:20px;"> LOGO Manage Policies
+Join the million of policy owners who are managing their accounts online!
+</h1>
+<table align= "center" frame="box" width="100px" height="100px" border="0px" bordercolor="white" cellspacing="20" cellpadding="30px" style="margin-top:0px;vertical-align=middle;">
+<tr width="100px" height="50px">
+<td style="background-color:white;">
+          <h2 class="text-center" style="text-align: center;margin-top: -21px;">Sign In</h2>
+          <form method="post" ng-submit="login()" name="loginForm">
+            <div class="form-group has-feedback">Email</br>
+              <input class="form-control input-lg" type="text" name="email" ng-model="email" placeholder="Email" style="font-family:monospace;width:290px;" required autofocus>
+              <span class="ion-at form-control-feedback"></span>
+            </div>
+			</br>
+            <div class="form-group has-feedback">
+             Password</br>
+			  <input class="form-control input-lg" type="password" name="password" ng-model="password" placeholder="Password" style="font-family:monospace;width:290px;" required>
+              <span class="ion-key form-control-feedback"></span>
+            </div>
+			</br></br>
+            <p style="cursor:pointer;margin-top:-10px;">Forgot Password? &nbsp;	Remember Me	&nbsp; 
+			<div class="switch" style="margin-right:-114px;margin-left:245px;margin-top:-35px;">
+			<input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+            <label for="cmn-toggle-1"></label>
+			</div>
+			</p>
+			</br>
+			<p style="text-align: center;margin-top: -12px;">
+            <input type="text" readOnly="true" value="LOGIN" ng-disabled="loginForm.$invalid" class="btn btn-lg btn-block btn-success" style="background-color: #060606;width: 166px;height: 29px;border: none;text-align: center;cursor:pointer;color:white;font-weight:bold;font-size: larger;" onClick="submitAction();">
+			</p>
+            <br/>
+			<hr>
+			<h4 style="text-align:center;font-size:13px;">
+				Create an Account</br>
+				<u>Sign up to take advantage of your online benifits</u>
+			</h4>
+          </form>
+</td>
+<td style="background-color: white;">
+          <h2 class="text-center" style="text-align: center;margin-top:-19%;">Quick Pay</h2>
+		  <h5 style="text-align:center;">Pay your bill without sigining in</h5>
+          <form method="post" ng-submit="login()" name="loginForm">
+            <div class="form-group has-feedback">
+			Policy Number</br>
+              <input class="form-control input-lg" type="text" name="email" ng-model="email" placeholder="Policy Number" style="font-family:monospace;width:290px;" required autofocus>
+              <span class="ion-at form-control-feedback"></span>
+            </div>
+			</br>
+            <div class="form-group has-feedback">
+             Date of Birth</br>
+			  <input class="form-control input-lg" type="date" name="password" ng-model="password" placeholder="DD/MM/YYYY" style="font-family:monospace;width:290px;" required>
+              <span class="ion-key form-control-feedback"></span>
+            </div>
+			</br>
+			<div class="form-group has-feedback">
+             Zip Code</br>
+			  <input class="form-control input-lg" type="password" name="password" ng-model="password" placeholder="Zip Code" style="font-family:monospace;width:290px;" required>
+              <span class="ion-key form-control-feedback"></span>
+            </div>
+			</br></br>
+			<p style="text-align: center;margin-top: -12px;">
+            <input type="text" readOnly="true" value="MAKE A PAYMENT" ng-disabled="loginForm.$invalid" class="btn btn-lg btn-block btn-success" style="background-color: #060606;width: 166px;height: 29px;border: none;text-align: center;cursor:pointer;color:white;font-weight:bold;font-size:initial;">
+			</p>
+            <br/>
+		</form>
+</td>
+</tr>
+</table>
+<h5>@2016 Terms and Conditions | Privacy Policy</h5>
+</body>
+</html>
