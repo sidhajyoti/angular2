@@ -1,0 +1,192 @@
+body { background:lightgrey;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+	p,li {
+    font-weight: 400;
+    line-height: 20px;
+}
+.top-black-band-data {background:#000;color:#fff;text-align:right;padding:4px;margin-top:4px; }
+.top-logo-data {  text-align: center;}
+.col-md-sign ,.col-md-quick-Pay{ background:#fff;}
+
+.col-md-quick-Pay {padding:0px 10px 10px 10px;margin-left:20px;    min-height: 451px;}
+
+h1.top-logo-data {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h2 { text-align:center;}
+h5 { text-align:center;}
+
+label.forgot-pwd {
+    margin-top: 3px;
+    padding: 0px;
+    margin-left: 4%;
+	color:black;
+}
+a#myBtn {
+    color: black;
+}
+
+
+.cmn-btn ,.btn-default1:hover{
+    background-color: #060606;
+    width: 90%;
+    height: 35px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    /* box-shadow: 0 0 10px 3px #15d6ba; */
+    border-radius: 5px;
+    margin: 12px auto;
+    display: block;
+}
+.login-btn {  margin-top:30px;}
+hr { width:90%;margin:20px auto;}
+.btm-text {  text-align: center;
+    font-size: 13px;
+    color: black;
+
+}
+.Sign-up {  margin-top:5px;}
+.copy-right h5 { text-align:left;color:black;margin-left:40px;
+
+    font-family: 'ArialMT', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+   
+    line-height: normal;
+
+}
+.copy-right {
+    position: relative;
+	clear:both;
+    bottom: 0px;
+    width: 100%;
+    text-align: left;
+    color: black;
+}
+
+.col-md-quick-Pay h2 { margin-top:10px; }
+input.dob{ text-transform: uppercase; } 
+.sign-in { margin-bottom:30px;}
+
+.modal { top:14% !important;height:403px;} 
+.text-left-close {  float:left;border:none;text-decoration:underline;font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;}
+	button.btn.btn-default.text-left-close {
+    background: none;
+    text-decoration: underline;
+}
+button.btn.btn-primary.reset-password {
+    background: #000;
+    border: none;
+    border-radius: 0px !important;
+    padding: 9px 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.modal-content ,input#recipient-name{
+    border-radius: 0px !important;    border-color: rgba(134, 134, 134, 1);
+}
+.customer-service {text-decoration:underline;cursor:pointer; }
+h4.modal-title {
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #5E5E5E;
+}
+input#recipient-name {
+    font-family: 'Lato-Regular', 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #CCCCCC;
+    text-align: left;
+}
+.modal-content {
+    width: 80% !important;
+    margin: 0px auto;
+}
+
+button.close {
+    font-family: 'Lato-Regular', 'Lato';   
+    font-size: 29px;
+   
+}
+div#forgot-password {
+    overflow-y: hidden;
+}
+@media (min-width:769px) and (max-width:960px)
+{
+	
+	.col-md-quick-Pay {padding:0px 10px 10px 10px;margin-left:20px;    min-height: 451px;}
+	
+	.col-md-offset-3.col-md-3.col-md-sign.col-xs-12 {
+    width: 40%;
+    float: left;
+    display: block;
+    margin-left: 8%;
+    min-height: 470px;
+}
+.switch { float: right !important;margin-right:12px;display:block;}
+.col-md-quick-Pay {
+    padding: 0px 10px 10px 10px;
+    margin-left: 4%;
+    width: 40% !important;
+}
+
+
+}
+@media  (max-width:768px)
+{
+	.col-md-quick-Pay {
+    padding: 0px 10px 10px 10px;
+    margin-left: 0px !important;
+    min-height: 451px;
+    margin-top: 10px;
+}
+	.col-md-sign,.col-md-quick-Pay { width:98%;clear:both;margin:10px auto;}
+	.switch {
+    float: right;
+    /* margin-right: 43px; */
+    right: 0px;
+    position: absolute;
+}
+label.forgot-pwd {
+    /* margin: 0px auto; */
+    /* margin-top: 3px; */
+    /* margin-bottom: 30px; */
+    padding: 0px;
+	margin-top:0px;
+    font-size: 12px;
+    margin-left: 7%;
+    font-weight: normal;
+}
+.col-sm-11.col-md-11.col-xs-11.m-l-5 ,label.col-sm-2.col-md-2.col-xs-11.m-l-5 ,label.col-sm-5.col-md-5.col-xs-11.m-l-5,label.col-sm-3.col-md-5.col-xs-11.m-l-5.text-left{
+    margin-left: 4%;
+}
+
+}
+
+.form-horizontal .my-toogle {
+    padding-top: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    right: 0px;
+    position: absolute;
+}
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
