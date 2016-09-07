@@ -82,7 +82,7 @@
 					<div class="form-horizontal">
 
 
-						<form (ngSubmit)="onSubmit()" >
+						<form (ngSubmit)="onSubmit(email1,pwd)">
 						<div class="form-group col-md-11 col-xs-11 col-sm-11">
 							<label class="col-md-offset-1 col-xs-offset-1 col-sm-offset-1">Email
 								address</label> <input type="email" [(ngModel)]="email1" name="email1"
@@ -91,7 +91,7 @@
 						</div>
 						<div class="form-group col-md-11 col-xs-11 col-sm-11">
 							<label class="col-md-offset-1 col-xs-offset-1 col-sm-offset-1">Password</label>
-							<input type="password"
+							<input type="password" [(ngModel)]="pwd" name="pwd"
 								class="form-control col-md-offset-1 col-xs-offset-1 col-sm-offset-1"
 								placeholder="Password">
 						</div>
