@@ -82,22 +82,15 @@
 					<div class="form-horizontal">
 
 
-						<form (ngSubmit)="onSubmit(email1,pwd)">
+						<form>
 						<div class="form-group col-md-11 col-xs-11 col-sm-11">
-							<label class="col-md-offset-1 col-xs-offset-1 col-sm-offset-1">Email
-								address</label> <input type="email" [(ngModel)]="email1" name="email1"
-								class="form-control col-md-offset-1 col-xs-offset-1 col-sm-offset-1"
-								placeholder="Email">
+							<label class="col-md-offset-1 col-xs-offset-1 col-sm-offset-1">Email Address</label> 
+							<input id="email" type="email" class="form-control col-md-offset-1 col-xs-offset-1 col-sm-offset-1"	placeholder="Email" [(ngModel)]="localUser.username" >
 						</div>
 						<div class="form-group col-md-11 col-xs-11 col-sm-11">
 							<label class="col-md-offset-1 col-xs-offset-1 col-sm-offset-1">Password</label>
-							<input type="password" [(ngModel)]="pwd" name="pwd"
-								class="form-control col-md-offset-1 col-xs-offset-1 col-sm-offset-1"
-								placeholder="Password">
+							<input id="password" type="password" class="form-control col-md-offset-1 col-xs-offset-1 col-sm-offset-1" placeholder="Password" [(ngModel)]="localUser.password" >
 						</div>
-
-
-
 
 						<div class="form-group col-md-11 col-xs-11 col-sm-11">
 							<div class="col-sm-12 col-md-12 col-xs-12">
@@ -124,7 +117,7 @@
 
 						<div class="form-group">
 							<div class="col-sm-offset-1 col-sm-10">
-								<button type="submit" ng-click="" class="col-sm-offset-1 col-xs-offset-3 col-sm-10  col-xs-7 btn ">LOGIN</button>
+								<button type="submit" class="col-sm-offset-1 col-xs-offset-3 col-sm-10  col-xs-7 btn" (click)="login()" >LOGIN</button>
 							</div>
 						</div>
 						</form>
